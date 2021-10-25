@@ -24,7 +24,7 @@ CREATE TABLE BESTELLUNG(
 
 CREATE TABLE ZUTAT (
     ZID             INTEGER NOT NULL,
-    Zutatname       VARCHAR(50),
+    ZUTAT       VARCHAR(50),
     MENGENEINHEIT   VARCHAR(25),
     KALORIEN        INTEGER,
     BESTAND         INTEGER,
@@ -116,9 +116,7 @@ ALTER TABLE LIEFERANT_ZUTAT ADD PRIMARY KEY (LIEFERANTENNR,ZID);
 
 /******************************************************************************/
 /***                              Foreign Keys                              ***/
-/******************************************************************************
+/******************************************************************************/
 
-ALTER TABLE ZUTAT ADD FOREIGN KEY (LIEFERANT) REFERENCES LIEFERANT (LIEFERANTENNR);
-ALTER TABLE BESTELLUNGZUTAT ADD FOREIGN KEY (BESTELLNR) REFERENCES BESTELLUNG (BESTELLNR);
-ALTER TABLE BESTELLUNG ADD FOREIGN KEY (KUNDENNR) REFERENCES KUNDE (KUNDENNR);
-ALTER TABLE BESTELLUNGZUTAT ADD FOREIGN KEY (ZUTATENNR) REFERENCES ZUTAT (ZUTATENNR);
+ALTER TABLE KUNDE ADD FOREIGN KEY (PLZ) REFERENCES ORT (PLZ);
+ALTER TABLE LIEFERANT ADD FOREIGN KEY (PLZ) REFERENCES ORT (PLZ);
