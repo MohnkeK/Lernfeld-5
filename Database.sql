@@ -111,10 +111,6 @@ CREATE TABLE LIEFERANTZUTATEN (
     ZID             INTEGER
 );
 
-/******************************************************************************/
-/***                              Foreign Keys                              ***/
-/******************************************************************************/
-
 ALTER TABLE REZEPTALLERGENE ADD FOREIGN KEY (RID) REFERENCES REZEPTE (RID);
 ALTER TABLE REZEPTALLERGENE ADD FOREIGN KEY (AID) REFERENCES ALLERGENE (AID);
 ALTER TABLE REZEPTEKG ADD FOREIGN KEY (EID) REFERENCES ENKATEGORIE (EID);
