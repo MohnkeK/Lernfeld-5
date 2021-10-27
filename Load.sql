@@ -321,6 +321,87 @@ INSERT INTO BESTELLUNGZUTATEN(BESTELLNR, ZID, MENGE) VALUES (11, 1012, 5);
 
 INSERT INTO BESTELLUNGZUTATEN(BESTELLNR, ZID, MENGE) VALUES (12, 1010, 15);
 
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (1, 'Kartoffelpuffer', '1 Stk Zwiebel
+1000g Kartoffel (festkochend)
+2 Stk Eier
+1 Prise Salz
+3 EL Mehl
+1 Prise Pfeffer
+10 EL ÖL','Kartoffelpuffer kennen die meisten von uns schon aus unseren Kindheitstagen. Zuerst schält man die Zwiebel und die Kartoffeln und dann reibt man sie mit einer Reibe - nicht zu fein aber auch nicht zu grob. Das Ganze kommt danach in eine große Schüssel, wo die Eier, das Mehl, das Salz und der Pfeffer hinzu kommen. Alles wird mit den Händen gut durchgeknetet. Wenn die Kartoffeln nicht sofort verarbeitet werden, empfiehlt es sich, sie vorher auszudrücken, da sie sehr viel Wasser verlieren - allzu lange sollten sie dennoch trotzdem nicht stehen. Nun wird in einer Pfanne Öl erhitzt. Mit einem Schöpfer gibt man immer zirka eineinhalb Schöpfer Klecks in die Pfanne und brät ihn von beiden Seiten jeweils 6-8 Minuten goldbraun an.');
+
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (2, 'Vegane Pfannenkuchen', '250ml Sojamilch (Sojadrink)
+3EL Sojamehl
+6EL Weizenmehl
+1EL Pflanzenöl' ,'Die Sojamilch (Vanille-Sojamilch geht auch sehr gut) in eine Rührschüssel geben und das Sojamehl einrühren. Danach das Weizenmehl dazugeben und verrühren. So lange, bis ein glatter Teig entstanden ist. Der Teig sollte nicht zu dickflüssig sein, jedoch auch nicht so dünn wie Crépe-Teig. Bei Bedarf mit etwas Sojamilch oder Weizenmehl ausgleichen. Zum Ausbacken Pflanzenöl in eine Pfanne geben und auf mittlerer bis hoher Flamme heiß werden lassen, danach auf mittlere Flamme runterschalten. Pro Pfannkuchen eine großzügige Kelle von dem vorbereiteten Teig in die Pfanne geben und sofort verstreichen (oder in Form fließen lassen). Von beiden Seiten goldbraun ausbacken.');
+
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (3, 'Kalorienarmer Fitness Apfelkuchen', '100g Zucchini 
+4 Eiweiß
+30g Proteinpulver
+50g Haferflocken
+1 FläschchenButter-Vanille-Aroma
+60g Apfelmark o. ungesüßtes Apfelmus
+1TL Backpulver
+75g Xylit (Zuckerersatz) oder Stevia
+1 großer Apfel
+Etwas Zimt' ,'Alle Zutaten in einen Mixer geben und gut durchmixen. Wenn man keinen Mixer hat, kann man die Zucchini auch von Hand sehr klein reiben und die restlichen Zutaten unterheben. Den Ofen auf 180 °C (Ober-/Unterhitze) vorheizen. Die Masse in eine Springform (ca. 24 cm) füllen und mit dem klein geschnittenen Apfel belegen. Danach etwas Zimt über den Kuchen streuen. Den Kuchen bei 180 °C in der Mitte des Ofens ca. 20 Minuten backen.');
+
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (4, 'Laktosefreier Apfelkuchen', '300g Mehl
+4g Natron
+250 g Zucker 
+etwas Vanillearoma 
+1EL Kakaopulver
+350ml Sojamilch (Sojadrink)
+150g Margarine
+2 Eier','Die Zutaten in der angegebenen Reihenfolge vermischen. Den Teig in eine Backform gießen und ca. 30 Minuten bei 180°C im Ofen backen.');
+
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (5, 'Glutenfreie Waffeln', '100g Zucker
+125g Butter
+1Pck. Vanillezucker
+3 Eier
+220g Mehlmischung, glutenfrei
+200ml Milch
+1TL, gehäuft Backpulver, glutenfrei','Zucker, Vanillezucker und Butter schaumig rühren. Die Eier trennen. Die Mehlmischung mit dem Backpulver mischen. Dann abwechselnd die Eigelbe, das glutenfreie Mehl und die Milch zu dem Zucker-Butter-Gemisch geben. Die Eiweiße steif schlagen und unter die Masse heben. Den fertigen Teig in ein Waffeleisen geben und portionsweise goldbraun ausbacken. Nach Belieben mit Puderzucker, Kirschen, Sahne oder Ahornsirup servieren. ');
+
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (6, 'Kicherebsen-Nudeln', '200g Kichererbsenmehl
+2 Eier
+1 Prise Salz', 'Die Zutaten mischen und kräftig verkneten, bis ein fester Teig entsteht. Diesen für ca. 30 Minuten im Kühlschrank ruhen lassen.
+
+Dann den Teig portionsweise auf einer mit Kichererbsenmehl bemehlten Oberfläche möglichst dünn ausrollen und in dünne Streifen schneiden. Man kann dafür ein scharfes Messer oder auch einen Pizzaschneider verwenden.
+
+Die Nudeln dann auf einem Backpapier zwischenlagern. Dabei aufpassen, dass sie nicht zusammenkleben.
+
+Die Nudeln kocht man, wie normale Nudeln, in siedendem Salzwasser für ca. 7 - 10 Minuten al dente.
+
+Abschütten und mit der Soße/dem Pesto der Wahl verspeisen. ');
+
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (7, 'Vanillekipferl', '250g Mehl glatt (700er)
+200g Butter
+100g geriebene Walnüsse
+70g Puderzucker
+1 Prise Salz', 'Butter ins Mehl schneiden und aus allen Teigzutaten einen Mürbeteig kneten. 1/2 Stunde oder länger rasten lassen.
+
+Aus dem Teig fingerdicke Stränge rollen und diese in 3 cm lange Stücke schneiden. Die Stücke zwischen den Handflächen zu Würstchen rollen und dann zu kleineren Kipferln biegen.
+
+Auf Backtrennpapier auf der 2. Schiene des Backrohres bei Umluft 15 - 20 Minuten bei 140 - 150°C hell backen. (Das Rohr etwas vorheizen.)
+
+Vorsicht, die Kipferln verbrennen sehr rasch. Man muss sie sofort mit Hilfe des Backtrennpapiers vom Blech nehmen.
+
+Kurz abkühlen lassen (heiß brechen sie!) und in ca. 100 g Staubzucker, der mit 2 Päckchen Vanillezucker vermischt wurde, vorsichtig wälzen.
+
+Falls man geschälte Mandeln oder Haselnüsse statt der Walnüsse verwenden möchte, muss man 220 g Butter nehmen. ');
+
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (8, 'Keto-Flammenkuchen', '120g Quark
+2 Eier
+160g geriebener Käse
+100g Crème fraîche
+2 Lauchzwiebeln
+50g Speckwürfel', 'Den Backofen auf 170 °C Ober-/Unterhitze vorheizen.
+
+Für den Boden Quark, Eier und 80 g vom Käse in einer Schüssel miteinander verrühren. Die Masse auf das mit Backpapier ausgelegte Backblech kippen und glatt streichen. 15 Minuten im Ofen backen.
+
+Das Backblech herausnehmen, den Kuchenboden mit Crème fraîche bestreichen und mit Speckwürfeln, Lauchzwiebeln und dem restlichen Käse bestreuen. Weitere 15 - 20 Minuten backen, bis der Käse eine schöne Farbe hat.
+
+Kann als Flammkuchen oder als Rolle gegessen werden.');
 
 
 COMMIT WORK;
