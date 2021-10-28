@@ -244,6 +244,14 @@ INSERT INTO ZUTATEN (ZID, ZUTAT, MENGENEINHEIT, NETTOPREIS, BESTAND, KALORIEN, K
 
 INSERT INTO LIEFERANTZUTATEN (LIEFERANTENNR, ZID) VALUES (103, 6300);
 
+INSERT INTO ZUTATEN (ZID, ZUTAT, MENGENEINHEIT, NETTOPREIS, BESTAND, KALORIEN, KOHLENHYDRATE, PROTEIN, FETT) VALUES (9999, 'Mehl', 'Kilo', 0.99, 1000, 3640, 760, 100, 10);
+
+INSERT INTO LIEFERANTZUTATEN (LIEFERANTENNR, ZID) VALUES (173, 9999);
+
+INSERT INTO ZUTATEN (ZID, ZUTAT, MENGENEINHEIT, NETTOPREIS, BESTAND, KALORIEN, KOHLENHYDRATE, PROTEIN, FETT) VALUES (9998, 'Zucker', 'Kilo', 0.79, 1000, 3870, 1000, 0, 0);
+
+INSERT INTO LIEFERANTZUTATEN (LIEFERANTENNR, ZID) VALUES (173, 9998);
+
 INSERT INTO BESTELLUNG (BESTELLNR, KUNDENNR, BESTELLDATUM, RECHNUNGSBETRAG) VALUES (1, 2001,'2020-07-01', 6.21);
 
 INSERT INTO BESTELLUNG (BESTELLNR, KUNDENNR, BESTELLDATUM, RECHNUNGSBETRAG) VALUES (2, 2002,'2020-07-08', 32.96);
@@ -329,12 +337,12 @@ INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (1, 'Karto
 1 Prise Pfeffer
 10 EL ÖL','Kartoffelpuffer kennen die meisten von uns schon aus unseren Kindheitstagen. Zuerst schält man die Zwiebel und die Kartoffeln und dann reibt man sie mit einer Reibe - nicht zu fein aber auch nicht zu grob. Das Ganze kommt danach in eine große Schüssel, wo die Eier, das Mehl, das Salz und der Pfeffer hinzu kommen. Alles wird mit den Händen gut durchgeknetet. Wenn die Kartoffeln nicht sofort verarbeitet werden, empfiehlt es sich, sie vorher auszudrücken, da sie sehr viel Wasser verlieren - allzu lange sollten sie dennoch trotzdem nicht stehen. Nun wird in einer Pfanne Öl erhitzt. Mit einem Schöpfer gibt man immer zirka eineinhalb Schöpfer Klecks in die Pfanne und brät ihn von beiden Seiten jeweils 6-8 Minuten goldbraun an.');
 
-INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (2, 'Vegane Pfannenkuchen', '250ml Sojamilch (Sojadrink)
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (5, 'Vegane Pfannenkuchen', '250ml Sojamilch (Sojadrink)
 3EL Sojamehl
 6EL Weizenmehl
 1EL Pflanzenöl' ,'Die Sojamilch (Vanille-Sojamilch geht auch sehr gut) in eine Rührschüssel geben und das Sojamehl einrühren. Danach das Weizenmehl dazugeben und verrühren. So lange, bis ein glatter Teig entstanden ist. Der Teig sollte nicht zu dickflüssig sein, jedoch auch nicht so dünn wie Crépe-Teig. Bei Bedarf mit etwas Sojamilch oder Weizenmehl ausgleichen. Zum Ausbacken Pflanzenöl in eine Pfanne geben und auf mittlerer bis hoher Flamme heiß werden lassen, danach auf mittlere Flamme runterschalten. Pro Pfannkuchen eine großzügige Kelle von dem vorbereiteten Teig in die Pfanne geben und sofort verstreichen (oder in Form fließen lassen). Von beiden Seiten goldbraun ausbacken.');
 
-INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (3, 'Kalorienarmer Fitness Apfelkuchen', '100g Zucchini 
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (2, 'Kalorienarmer Fitness Apfelkuchen', '100g Zucchini 
 4 Eiweiß
 30g Proteinpulver
 50g Haferflocken
@@ -345,7 +353,7 @@ INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (3, 'Kalor
 1 großer Apfel
 Etwas Zimt' ,'Alle Zutaten in einen Mixer geben und gut durchmixen. Wenn man keinen Mixer hat, kann man die Zucchini auch von Hand sehr klein reiben und die restlichen Zutaten unterheben. Den Ofen auf 180 °C (Ober-/Unterhitze) vorheizen. Die Masse in eine Springform (ca. 24 cm) füllen und mit dem klein geschnittenen Apfel belegen. Danach etwas Zimt über den Kuchen streuen. Den Kuchen bei 180 °C in der Mitte des Ofens ca. 20 Minuten backen.');
 
-INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (4, 'Laktosefreier Apfelkuchen', '300g Mehl
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (6, 'Laktosefreier Schokokuchen', '300g Mehl
 4g Natron
 250 g Zucker 
 etwas Vanillearoma 
@@ -354,7 +362,7 @@ etwas Vanillearoma
 150g Margarine
 2 Eier','Die Zutaten in der angegebenen Reihenfolge vermischen. Den Teig in eine Backform gießen und ca. 30 Minuten bei 180°C im Ofen backen.');
 
-INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (5, 'Glutenfreie Waffeln', '100g Zucker
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (3, 'Glutenfreie Waffeln', '100g Zucker
 125g Butter
 1Pck. Vanillezucker
 3 Eier
@@ -362,7 +370,7 @@ INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (5, 'Glute
 200ml Milch
 1TL, gehäuft Backpulver, glutenfrei','Zucker, Vanillezucker und Butter schaumig rühren. Die Eier trennen. Die Mehlmischung mit dem Backpulver mischen. Dann abwechselnd die Eigelbe, das glutenfreie Mehl und die Milch zu dem Zucker-Butter-Gemisch geben. Die Eiweiße steif schlagen und unter die Masse heben. Den fertigen Teig in ein Waffeleisen geben und portionsweise goldbraun ausbacken. Nach Belieben mit Puderzucker, Kirschen, Sahne oder Ahornsirup servieren. ');
 
-INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (6, 'Kicherebsen-Nudeln', '200g Kichererbsenmehl
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (7, 'Kicherebsen-Nudeln', '200g Kichererbsenmehl
 2 Eier
 1 Prise Salz', 'Die Zutaten mischen und kräftig verkneten, bis ein fester Teig entsteht. Diesen für ca. 30 Minuten im Kühlschrank ruhen lassen.
 
@@ -374,7 +382,7 @@ Die Nudeln kocht man, wie normale Nudeln, in siedendem Salzwasser für ca. 7 - 1
 
 Abschütten und mit der Soße/dem Pesto der Wahl verspeisen. ');
 
-INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (7, 'Vanillekipferl', '250g Mehl glatt (700er)
+INSERT INTO REZEPTE (RID, REZEPTE, ZUTATENMENGE, BESCHREIBUNG) VALUES (4, 'Vanillekipferl', '250g Mehl glatt (700er)
 200g Butter
 100g geriebene Walnüsse
 70g Puderzucker
@@ -403,37 +411,240 @@ Das Backblech herausnehmen, den Kuchenboden mit Crème fraîche bestreichen und 
 
 Kann als Flammkuchen oder als Rolle gegessen werden.');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('A', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('A', 'Gutenhaltiges Getreide', 'Weizen, wie Dinkel und Khorasan-Weizen Roggen, Gerste, Hafer
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('B', '', '');
+Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('C', '', '');
+Mehl, Flocken, Gries, Kleie, Malz, Schrot, Stärke, Graupen, Bulgur, Couscous, Weizenkeimlinge, Weizenkeimöl, Dunst, Polenta, Brot und Gebäck, Kuchen, Nudeln, Teigwaren, Frittaten, Suppen, Saucen, Paniermehl, Panade, Semmelbrösel, Wurstwaren, Kartoffel-Fertiggerichte, Backerbsen, Frischkornbreie, Desserts, Schokolade, Müsli, Backmischungen, Torten, Kuchen, Kekse, Plätzchen, Malz, Malzbier, Bier, Getreide- (Malz-) kaffee, Roux, Kakaogetränke, Würzmischungen, Sojasauce, hydrolysiertes Weizeneiweiß in Würzsaucen, Schokoladenriegel, Müsliriegel, Eis mit Waffel, Trennmittel in geriebenem Käse, nationale/regionale Wurstspezialitäten, z. B.: D: Grützwurst, Tiegelblutwurst, Schüsselwurst, Wellwurst, Knipp, Pinkel, AT: Bratleberwurst, Bratblutwurst, Kärntner Weißwurst, Maischerl, UK: Haggis, Black & White Pudding
+');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('D', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('B', 'Krebstiere und daraus gewonnene Erzeugnisse', 'Dazu gehören: Krebs, Shrimps, Garnelen, Langusten, Hummer, Scampi, Crevetten, Fluss und Taschenkrebse, Krabben, Krill und Seespinne
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('E', '', '');
+Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen: Shrimps-Paste und andere asiatische Würzpasten, Feinkostsalate, Suppen, Saucen, Bouillabaisse, Sashimi, Surimi, Krebsbutter, Kroepoek und Paella
+');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('F', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('C', 'Eier und daraus gewonnene Erzeugnisse', 'Dazu gehören: Eier von Geflügel, Huhn, Pute, Gans, Ente, Wachtel, Taube und Strauß
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('G', '', '');
+Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen: Eierteigwaren, Mayonnaise, Palatschinken (Pfannkuchen), Omelette, Kuchen, Gebäck, Brot, Nudeln, Croutons, faschierter Braten, Burger, Produkte mit Teigmantel oder Panier (Panade), Kartoffelfertigprodukte, Feinkostsalate, Pasteten, Quiches, Saucen (zB. Sauce Hollandaise, Sauce Béarnaise), Dressings, Desserts z.B. Mousse, Eis, Pudding, Cremespeisen, Meringue, Baiser, Ovomaltine, Simplesse, Biskotten (Löffelbiskuits), Meringue, Torten, Kuchen, Gebäck, Wein, Schäume und Toppings für Spezialitätenkaffees, „Haftmittel“ für Körner und Dekorationen auf Brot und Backwaren, Zuckerglasur, Eierlikör und andere Liköre, Surimi');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('H', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('D', 'Fische und daraus gewonnene Erzeugnisse', 'Dazu gehören:  Alle Fischarten, Kaviar, Rogen
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('I', '', '');
+Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
+ Omega3-Öl, Fischgelatine, Fischextrakt, Fischsauce, Anchovis, Anchovipaste, Kräcker, Saucen (zB. Worcestersauce), Fonds, Suppen, Würzpasteten, Würste, Sardellenwurst, Brotaufstriche, Feinkostsalate, Pasteten, Vitello tonnato, Surimi, Kamaboko');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('J', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('E', 'Erdnüsse und daraus gewonnene Erzeugnisse', 'Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
+ Erdnüsse geröstet, Erdnussöl, Erdnussbutter, Erdnussflocken, Erdnussmehl, Margarine, Brot, Kuchen, Gebäck, Schokocreme, vegetarische Brotaufstriche, Cerealien, Müsli, Frühstücksflocken, Schokolade, Feinkostsalate, Marinaden, Satésauce, Eis, aromatisierter Kaffee, Likör, in Erdnussöl frittierte Speisen (Pommes Frittes), vegetarischer Fleischersatz, Nussmischungen, Studentenfutter');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('K', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('F', 'Sojabohnen und daraus gewonnene Erzeugnisse', 'Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('L', '', '');
+Alle Sorten von Sojabohnen, Edamame, Kinako, Miso, Natto, Okara, Shoyu, Sojadrink, Sojaflocken, Sojamehl, Sojaöl, Sojapaste, Sojasauce, Sojasprossen, nicht raffiniertes Sojaöl, Sojaeiweiß, Tamari, Tempe, Tofu, TVP (Textured Vegetable Protein = Fleischersatz), E 322 Lecithihin (Soja), E 426 Soja-bohnen-Polyose, Yuba, Brot, Kuchen, Gebäck, Feinkostsalate, Margarine, Schokocreme, vegetarische Brotaufstriche, Müsli, Schokolade, Kekse, Kaugummi, Saucen, Dressings, Marinaden, Mayonnaise, Eis, Sportlernahrung, eiweißangereicherte Erfrischungsgetränke, Diätdrinks, Kaffeeweißer, Fertiggerichte aller Art, Würzsaucen (Soja, Shoyu, Tamari, Teriyaki, Worcester), vegetarische Gerichte, Surimi, Burger, Wurstwaren, Light-Hackfleischzubereitungen/Light-Zubereitungen für Faschiertes');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('M', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('G', 'Milch und daraus gewonnene Erzeugnisse (einschließlich Laktose)', 'Dazu gehören: Milch von Säugetieren wie Kuh, Büffel, Schaf, Ziege, Pferd und Esel
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('N', '', '');
+Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen: Butter, Buttermilch, Butterschmalz (Ghee, NiterKibbeh), Creme fraiche, Dickmilch, Joghurt, Kasin(ate), Käse, Laktalbumin, Laktoglobulin, Magermilch, Sauermilch, Milcheiweiß, Milcheiweißhydrolysate, Casein, Molkenproteine, Milchzucker (Laktose), Milch, Milchpulver, Molke, Sahne/Rahm/Obers, Schmand/Sauerrahm, Crème fraîche, Dickmilch, Kondensmilch, Joghurt, Kefir, Käse, Quark/Topfen');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('O', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('H', 'Schalenfrüchte', 'Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen: Gemahlene, gehobelte Nüsse, Nusspasten, Nusscremes, geröstete Nüsse, Nussöle, Brot, Torten, Kuchen, Gebäck, Brühwürste (Pistazien), Rohwürste (Walnüsse), Pasteten, Feinkostsalate (Waldorf), Joghurt, Käse, Nuss-/Nougatcreme, vegetarische Aufstriche, Müsli, Schokolade, Marzipan, Müsliriegel, Kekse, Dressings, Curry, Pesto, Desserts, Likör, aromatisierte Kaffeespezialitäten, Pesto und andere Saucen, Salatdressings, vegetarische Gerichte
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('P', '', '');
+Mandeln, Haselnüsse, Walnüsse, Kaschunüsse, Pecannüsse, Paranüsse, Pistazien und Macadamia- oder Queenslandnüsse');
 
-INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('R', '', '');
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('I', 'Sellerie und daraus gewonnene Erzeugnisse', 'Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
+
+Bleich- oder Stangensellerie, Knollensellerie, Staudensellerie, Gemüsesäfte mit Sellerie, Selleriesaat, Sellerieblatt, -samen, -saft, Selleriepulver (auch in Gewürzen/Kräutermischungen), Selleriesalz, Suppengrün, Gewürzbrot, Wurst, Fleischerzeugnisse, Fleischzubereitungen, Kräuterkäse, Fertiggerichte, Feinkostsalate, Kartoffelsalat, Brühe, Bouillons, Suppen, Eintopf, Marinaden, Gewürzmischungen, Curry, salzige und pikante Snacks (Chips)');
+
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('J', 'Senf und daraus gewonnene Erzeugnisse', 'Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
+
+Senfkörner, Senfpulver, Senf, Senföl, Senfsprossen, Senfblätter und -blüten, Mostrich, Fleischerzeugnisse, Fleischzubereitungen, Fertiggerichte, Feinkostsalate, Suppen, Saucen, Dressing, Mayonnaise, Ketchup, eingelegtes Gemüse und Gewürzmischungen, Käse, Essiggurken, Rouladen, Currys, sauer eingelegtes Gemüse, Marinaden, Chutneys, Feinkostsalate
+
+');
+
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('K', 'Sesamsamen und daraus gewonnene Erzeugnisse', 'Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
+
+Sesamsamen, Sesammehl, Sesampaste (Tahin), Sesamsalz (Gomasio), Sesamöl, Sesambutter, Sesammehl, Brot, Knäckebrot, Gebäck (süß und salzig), Müsli, vegetarische Gerichte, Falafel, Salate, Humus, Feinkostsalate, Marinaden, Desserts, Hamburgerbrötchen, Cracker, Frühstückscerealien, Süßspeisen, türkische, orientalische und asiatische Küche, Moutabel');
+
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('L', 'Schwefeldioxid und Sulphite', 'Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
+
+Mit Schwefel behandeltes Trockenobst, getrocknetes Gemüse, Pilze, Tomatenpüree, Kartoffelprodukte, Wein, Bier, Fruchtzubereitungen, Müsli, Brot, Fleischerzeugnisse und -zubereitungen, Feinkostsalate, Suppen, Saucen, Sauerkraut, Fruchtsaft, Chips und andere getrocknete Kartoffelerzeugnisse, gesalzener Trockenfisch, Wein (geschwefelt), andere alkoholische Getränke, Trockenfrüchte (vor allem solche, die hell bleiben sollen), geriebene Meerrettichprodukte; kleinere Mengen z. B. in Kartoffelpüreeflocken liegen oft unterhalb der deklarationspflichtigen Mengen');
+
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('M', 'Lupinen und daraus gewonnene Erzeugnisse', 'Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen:
+
+Lupinenmehl, Lupinenprotein, Lupinenkonzentrat, Lupinenisolat, Alfalfa sprossen, pflanzliches Eiweiß in Backwaren und vegetarischem Fleischersatz, Brot, Gebäck, Pizza, Nudeln, Snacks, fettreduzierte Fleischerzeugnisse, Fleischersatz/vegetarische Produkte, glutenfreie Produkte, Desserts, milchfreier Eierersatz, Kaffeeersatz und Flüssiggewürze');
+
+INSERT INTO ALLERGENE (AID, BESCHREIBUNG, ALLERGEN) VALUES ('N', 'Weichtiere und daraus gewonnene Erzeugnisse', 'Dazu gehören: Schnecken, Abalone, Kraken wie Oktopus, Kopffüßer wie Tintenfische, Kalmare und alle Muscheln
+
+Beispiele, in welchen Produkten/Lebensmitteln sie vorkommen: Würzpasten, Austernsauce, Paella, Suppen (Bouillabaisse), Saucen, Marinaden, Feinkostsalate, Wein, Essig, Sepia, schwarze Nudeln, Surimi und  Sashimi');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (1, 'A');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (1, 'C');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (1, 'G');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (1, 'M');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (2, 'A');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (2, 'C');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (2, 'G');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (3, 'C');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (3, 'G');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (4, 'A');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (4, 'G');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (4, 'H');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (5, 'A');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (5, 'E');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (5, 'F');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (6, 'C');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (6, 'F');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (7, 'C');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (8, 'C');
+
+INSERT INTO REZEPTALLERGENE (RID, AID) VALUES (8, 'G');
+
+INSERT INTO ENKATEGORIE (ENKATEGORIENAME) VALUES ('Vegetarisch');
+
+INSERT INTO ENKATEGORIE (ENKATEGORIENAME) VALUES ('Frutarisch');
+
+INSERT INTO ENKATEGORIE (ENKATEGORIENAME) VALUES ('Glutenfrei');
+
+INSERT INTO ENKATEGORIE (ENKATEGORIENAME) VALUES ('Ohne EI');
+
+INSERT INTO ENKATEGORIE (ENKATEGORIENAME) VALUES ('Vegan');
+
+INSERT INTO ENKATEGORIE (ENKATEGORIENAME) VALUES ('Laktosefrei');
+
+INSERT INTO ENKATEGORIE (ENKATEGORIENAME) VALUES ('Nussfrei');
+
+INSERT INTO ENKATEGORIE (ENKATEGORIENAME) VALUES ('Low Carb');
+
+INSERT INTO REZEPTEKG (RID, EID) VALUES (1, 1);
+
+INSERT INTO REZEPTEKG (RID, EID) VALUES (2, 2);
+
+INSERT INTO REZEPTEKG (RID, EID) VALUES (3, 3);
+
+INSERT INTO REZEPTEKG (RID, EID) VALUES (4, 4);
+
+INSERT INTO REZEPTEKG (RID, EID) VALUES (5, 5);
+
+INSERT INTO REZEPTEKG (RID, EID) VALUES (6, 6);
+
+INSERT INTO REZEPTEKG (RID, EID) VALUES (7, 7);
+
+INSERT INTO REZEPTEKG (RID, EID) VALUES (8, 8);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (1, 4001, 2);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (1, 1002, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (1, 1006, 10);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (1, 7002, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (1, 9999, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (1, 7003, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (1, 7001, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2 , 1001, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 4001, 4);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 7006, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 7007, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 7008, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 7009, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 7010, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 7011, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 2001, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (2, 7012, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (3, 9998, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (3, 3003, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (3, 7016, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (3, 4001, 3);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (3, 7017, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (3, 3001, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (3, 7018, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (4, 9999, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (4, 3003, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (4, 7020, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (4, 7021, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (4, 7002, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (5, 7005, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (5, 4001, 2);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (5, 7002, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (5, 7001, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (5, 7005, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (7, 7019, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (7, 4001, 2);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (7, 7002, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (6, 9999, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (6, 7013, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (6, 9998, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (6, 7008, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (6, 7004, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (6, 7014, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (6, 7015, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (6, 4001, 2);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (8, 7022, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (8, 7023, 2);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (8, 7024, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (8, 1008, 2);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (8, 7025, 1);
+
+INSERT INTO REZEPTZUTATEN (RID, ZID, MENGE) VALUES (8, 4001, 2);
+
 COMMIT WORK;
